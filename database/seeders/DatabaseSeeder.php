@@ -14,11 +14,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        DB::table('tbl_user') -> insert([
-            'username' => 'admin',
-            'tipe' => 'admin',
-            'password' => password_hash('admin', PASSWORD_DEFAULT),
-            'active' => '1'
-        ]);
+        // DB::table('tbl_user') -> insert([
+        //     'username' => 'admin',
+        //     'tipe' => 'admin',
+        //     'password' => password_hash('admin', PASSWORD_DEFAULT),
+        //     'active' => '1'
+        // ]);
     }
 }
