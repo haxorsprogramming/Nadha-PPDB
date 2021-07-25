@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TblPpdbJalur extends Migration
+class TblDataMasterJurusan extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,11 @@ class TblPpdbJalur extends Migration
      */
     public function up()
     {
-        Schema::create('tbl_ppdb_jalur', function (Blueprint $table) {
+        Schema::create('tbl_data_master_jurusan', function (Blueprint $table) {
             $table -> id();
-            $table -> char('kd_jalur', 20);
-            $table -> char('nama_jalur', 200);
+            $table -> char('kd_mapel', 20);
+            $table -> char('nama_mapel', 200);
             $table -> text('deksripsi');
-            $table -> char('kd_periode', 20);
-            $table -> smallInteger('kuota');
-            $table -> char('metode_seleksi', 20);
             $table -> char('aktif', 1);
         });
     }
@@ -32,6 +29,6 @@ class TblPpdbJalur extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('tbl_ppdb_jalur');
+        Schema::dropIfExists('tbl_data_master_jurusan');
     }
 }
