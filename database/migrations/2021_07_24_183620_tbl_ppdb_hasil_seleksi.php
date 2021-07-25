@@ -13,7 +13,15 @@ class TblPpdbHasilSeleksi extends Migration
      */
     public function up()
     {
-        //
+        Schema::create('tbl_ppdb_hasil_seleksi', function (Blueprint $table) {
+            $table -> id();
+            $table -> char('kd_registrasi', 30);
+            $table -> char('status_seleksi', 20);
+            $table -> char('ranking', 3);
+            $table -> timestamp('waktu_ranking');
+            $table -> char('username_verifikator', 150);
+            $table -> char('aktif', 1);
+        });
     }
 
     /**
@@ -23,6 +31,6 @@ class TblPpdbHasilSeleksi extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('tbl_ppdb_hasil_seleksi');
     }
 }

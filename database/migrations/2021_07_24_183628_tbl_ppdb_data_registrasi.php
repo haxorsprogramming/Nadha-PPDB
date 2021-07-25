@@ -47,6 +47,11 @@ class TblPpdbDataRegistrasi extends Migration
             $table -> char('status_orang_tua', 30);
             $table -> char('nama_ayah', 200);
             $table -> char('nama_ibu', 200);
+            $table -> char('nama_wali', 200);
+            $table -> longText('alamat_orang_tua');
+            $table -> char('no_hp_orang_tua', 40);
+            $table -> timestamp('last_update');
+            $table -> softDeletes($column = 'deleted_at', $precision = 0);
         });
     }
 
