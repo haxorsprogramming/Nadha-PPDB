@@ -10,4 +10,4 @@ Route::get('/', [C_Home::class, 'home_page']);
 
 // Halaman administrator 
 Route::get('/panel-admin', [C_AdminPanel::class, 'login_page']);
-Route::get('/panel-admin/login/proses', [C_AdminPanel::class, 'login_proses']);
+Route::post('/panel-admin/login/proses', [C_AdminPanel::class, 'login_proses']);
