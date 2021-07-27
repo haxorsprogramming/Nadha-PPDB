@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Models\M_Auth_User;
+
 class C_Auth extends Controller
 {
     public function login_admin_panel_proses(Request $request)

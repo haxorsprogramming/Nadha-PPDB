@@ -14,4 +14,9 @@ class C_AdminPanel extends Controller
         return view('auth.login_page');
     }
 
+    public function dashboard()
+    {
+        
+    }
+
 }

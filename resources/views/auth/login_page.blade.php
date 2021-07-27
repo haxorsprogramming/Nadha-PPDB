@@ -1,5 +1,4 @@
 @include('layout.header_login_panel')
-
 <body class="signin-page">
     <div class="loader-bg"></div>
     <div class="loader">
@@ -25,7 +24,6 @@
                                         </div>
                                         <div class="col s12 right-align m-t-sm">
                                             <a href="javascript:void(0)" class="waves-effect waves-light btn teal" @click="masukAtc()" id="btn_atc_masuk">Masuk</a>
-
                                         </div>
 
                                     </form>

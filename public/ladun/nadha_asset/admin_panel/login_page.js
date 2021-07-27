@@ -1,6 +1,6 @@
 // route 
 var rToLogin = server + "panel-admin/login/proses";
-
+var rToDashboard = server + "panel-admin/dashboard";
 // vue object 
 var mainDiv = new Vue({
     el : '#mainDiv',
@@ -19,6 +19,7 @@ var mainDiv = new Vue({
                 document.querySelector("#btn_atc_masuk").innerHTML = "Memeriksa ...";
                 axios.post(rToLogin, ds).then(function(res){
                     let dr = res.data;
+                    console.log(dr);
                     if(dr.status === 'no_user'){
                         var $toastHTML = "Username tidak terdaftar !!!";
                         Materialize.toast($toastHTML, 3000);
@@ -26,8 +27,8 @@ var mainDiv = new Vue({
                         document.querySelector("#btn_atc_masuk").classList.remove('disabled');
                         document.querySelector("#btn_atc_masuk").innerHTML = "Masuk";
                         this.state_login = false;
-                    }else{
-
+                    }else if(dr.status === 'success'){
+                        window.location.assign(rToDashboard);
                     }
                 });
                 
