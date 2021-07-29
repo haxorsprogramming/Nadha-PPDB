@@ -7,5 +7,6 @@ use Illuminate\Database\Eloquent\Model;
 
 class M_Auth_User extends Model
 {
+    use HasFactory;
     protected $table = 'tbl_auth_user';
 }
