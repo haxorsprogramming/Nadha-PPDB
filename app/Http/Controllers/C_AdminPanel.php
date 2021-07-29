@@ -16,7 +16,7 @@ class C_AdminPanel extends Controller
 
     public function dashboard()
     {
-        
+        return view('admin_panel.dashboard');
     }
 
 }
