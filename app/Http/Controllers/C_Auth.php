@@ -8,14 +8,17 @@ use App\Models\M_Auth_User;
 
 class C_Auth extends Controller
 {
+
     public function login_admin_panel_proses(Request $request)
     {
-        /**
-         * Get data from POST
-         * if development mode go add this route -> controller to CSRF whitelist
-         */
-        $username = $request -> username;
-        $password = $request -> password;
+        
+        $dr = $this -> F_Login_Proses($request -> username, $request -> password);
+        
+        return \Response::json($dr);
+    }
+
+    function F_Login_Proses($username, $password)
+    {
         /**
          * Check total user
          */
@@ -51,7 +54,7 @@ class C_Auth extends Controller
                 $dr = ['status' => 'wrong_password'];
             }
         }
-
-        return \Response::json($dr);
+        return $dr;
     }
+
 }

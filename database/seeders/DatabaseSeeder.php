@@ -15,6 +15,11 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+        $this -> add_user();
+    }
+
+    function add_user()
+    {
         $now = Carbon::now();
         DB::table('tbl_auth_user') -> insert([
             'username' => 'admin',
