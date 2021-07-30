@@ -17,21 +17,36 @@ var mainDiv = new Vue({
                 document.querySelector("#txt_username").setAttribute('disabled','disabled');
                 document.querySelector("#btn_atc_masuk").classList.add('disabled');
                 document.querySelector("#btn_atc_masuk").innerHTML = "Memeriksa ...";
-                axios.post(rToLogin, ds).then(function(res){
-                    let dr = res.data;
-                    console.log(dr);
-                    if(dr.status === 'no_user'){
-                        var $toastHTML = "Username tidak terdaftar !!!";
-                        Materialize.toast($toastHTML, 3000);
-                        document.querySelector("#txt_username").removeAttribute('disabled');;
-                        document.querySelector("#btn_atc_masuk").classList.remove('disabled');
-                        document.querySelector("#btn_atc_masuk").innerHTML = "Masuk";
-                        this.state_login = false;
-                    }else if(dr.status === 'success'){
-                        window.location.assign(rToDashboard);
-                    }
-                });
-                
+                if(username === '' || password  === ''){
+                    let $toastHTML = "Isi username / password !!!";
+                    Materialize.toast($toastHTML, 3000);
+                }else{
+                    axios.post(rToLogin, ds).then(function(res){
+                        let dr = res.data;
+                        console.log(dr);
+                        if(dr.status === 'no_user'){
+                            let $toastHTML = "Username tidak terdaftar !!!";
+                            Materialize.toast($toastHTML, 3000);
+                            document.querySelector("#txt_username").removeAttribute('disabled');;
+                            document.querySelector("#btn_atc_masuk").classList.remove('disabled');
+                            document.querySelector("#btn_atc_masuk").innerHTML = "Masuk";
+                            document.querySelector("#txt_password").value = "";
+                            document.querySelector("#txt_username").focus();
+                            this.state_login = false;
+                        }else if(dr.status === 'wrong_password'){
+                            let $toastHTML = "Username / password salah !!!";
+                            Materialize.toast($toastHTML, 3000);
+                            document.querySelector("#txt_username").removeAttribute('disabled');;
+                            document.querySelector("#btn_atc_masuk").classList.remove('disabled');
+                            document.querySelector("#btn_atc_masuk").innerHTML = "Masuk";
+                            document.querySelector("#txt_password").value = "";
+                            document.querySelector("#txt_username").focus();
+                            this.state_login = false;
+                        }else{
+                            window.location.assign(rToDashboard);
+                        }
+                    });
+                }
             }else{
 
             }
@@ -51,6 +66,7 @@ function pesan_toast(tipe, judul, message) {
     if (tipe === "info") {
   
     } else if (tipe === "success") {
+        
     } else if (tipe === "warning") {
       iziToast.error({
           title: judul,
