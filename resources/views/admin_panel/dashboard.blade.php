@@ -217,7 +217,11 @@
 
 @include('layout.side_menu_panel')
 
-<main class="mn-inner inner-active-sidebar" id="div_utama">
+<main class="mn-inner inner-active-sidebar" id="div_utama" style="display: none;">
 
 </main>
+
+<div class='row' id='div_loading'>
+    <lottie-player src='https://assets10.lottiefiles.com/packages/lf20_u0w6fbdq.json' background='transparent' speed='1' style='width: 300px; height: 300px;text-align:center;' loop autoplay></lottie-player>
+</div>
 @include('layout.footer_dashboard_panel')

@@ -41,13 +41,18 @@ var div_menu = new Vue({
 // inisialisasi 
 NProgress.configure({ showSpinner: false });
 load_page(r_beranda, 'Dashboard');
+var fig_page_loading = "";
 
 async function load_page(page, page_title)
 {
     footer_app.page_title = page_title;
     NProgress.start();
-    await tidur_bentar(200);
+    $('#div_utama').hide();
+    $('#div_loading').show();
+    await tidur_bentar(3200);
     $("#div_utama").load(page);
+    $("#div_utama").show();
+    $('#div_loading').hide();
     NProgress.done();
 }
 

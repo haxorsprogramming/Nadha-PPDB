@@ -27,6 +27,7 @@
 <script src="{{ asset('/ladun/alpha') }}/js/alpha.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
 <script src="http://localhost/alpha/Source/assets/plugins/datatables/js/jquery.dataTables.min.js"></script>
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script>
     const server = "{{ url('/') }}/";
 </script>
