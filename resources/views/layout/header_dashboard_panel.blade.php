@@ -17,7 +17,7 @@
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="{{ asset('/ladun/alpha') }}/plugins/metrojs/MetroJs.min.css" rel="stylesheet">
     <link href="{{ asset('/ladun/alpha') }}/plugins/weather-icons-master/css/weather-icons.min.css" rel="stylesheet">
-
+    <link href="{{ asset('/ladun/nadha_asset') }}/admin_panel/css/nprogress.css" rel="stylesheet">
 
     <!-- Theme Styles -->
     <link href="{{ asset('/ladun/alpha') }}/css/alpha.min.css" rel="stylesheet" type="text/css" />

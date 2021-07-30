@@ -25,6 +25,7 @@
         <script src="{{ asset('/ladun/alpha') }}/plugins/material-preloader/js/materialPreloader.min.js"></script>
         <script src="{{ asset('/ladun/alpha') }}/plugins/jquery-blockui/jquery.blockui.js"></script>
         <script src="{{ asset('/ladun/alpha') }}/js/alpha.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/nprogress/0.2.0/nprogress.min.js"></script>
         <script>
             const server = "{{ url('/') }}/";
         </script>
