@@ -45,7 +45,7 @@ class C_Auth extends Controller
                 /**
                  * if true, create session & status success of respond
                  */
-                session(['userLogin' => $username]);
+                session(['user_login' => $username]);
                 $dr = ['status' => 'success'];
             }else{
                 /**
