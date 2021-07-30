@@ -19,4 +19,9 @@ class C_AdminPanel extends Controller
         return view('admin_panel.dashboard');
     }
 
+    public function beranda()
+    {
+        echo "halaman beranda";
+    }
+
 }

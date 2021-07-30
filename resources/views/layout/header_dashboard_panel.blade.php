@@ -93,15 +93,9 @@
                         </a>
                     </section>
                     <div class="header-title col s3 m3">
-                        <span class="chapter-title">Alpha</span>
+                        <span class="chapter-title">Nadha PPDB - Nadha School Apps</span>
                     </div>
-                    <form class="left search col s6 hide-on-small-and-down">
-                        <div class="input-field">
-                            <input id="search" type="search" placeholder="Search" autocomplete="off">
-                            <label for="search"><i class="material-icons search-icon">search</i></label>
-                        </div>
-                        <a href="javascript: void(0)" class="close-search"><i class="material-icons">close</i></a>
-                    </form>
+                    
                     <ul class="right col s9 m3 nav-right-menu">
                         <li><a href="javascript:void(0)" data-activates="chat-sidebar" class="chat-button show-on-large"><i class="material-icons">more_vert</i></a></li>
                         <li class="hide-on-small-and-down"><a href="javascript:void(0)" data-activates="dropdown1" class="dropdown-button dropdown-right show-on-large"><i class="material-icons">notifications_none</i><span class="badge">4</span></a></li>

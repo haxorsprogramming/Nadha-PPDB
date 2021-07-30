@@ -153,8 +153,8 @@
             </li>
         </ul>
         <div class="footer">
-            <p class="copyright">Steelcoders ©</p>
-            <a href="#!">Privacy</a> &amp; <a href="#!">Terms</a>
+            <p class="copyright">Nadha School © </p>
+            <a href="#!">NadhaMedia</a>
         </div>
     </div>
 

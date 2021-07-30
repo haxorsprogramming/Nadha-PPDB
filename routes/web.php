@@ -13,3 +13,4 @@ Route::get('/panel-admin', [C_AdminPanel::class, 'login_page']);
 Route::post('/panel-admin/login/proses', [C_Auth::class, 'login_admin_panel_proses']);
 
 Route::get('/panel-admin/dashboard', [C_AdminPanel::class, 'dashboard']);
+Route::get('/panel-admin/beranda', [C_AdminPanel::class, 'beranda']);
