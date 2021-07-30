@@ -21,7 +21,7 @@
                     <ul>
                         <li><a href="javascript:void(0)">Periode PPDB</a></li>
                         <li><a href="javascript:void(0)">Jalur Pendaftaran</a></li> 
-                        <li><a href="javascript:void(0)">Tahun Ajaran</a></li>
+                        <li><a href="javascript:void(0)" @click="tahun_ajaran_atc()">Tahun Ajaran</a></li>
                         <li><a href="javascript:void(0)">Jurusan</a></li>
                         <li><a href="javascript:void(0)">Mapel Seleksi</a></li>
                         <li><a href="javascript:void(0)">Bobot Sertifikat</a></li>
