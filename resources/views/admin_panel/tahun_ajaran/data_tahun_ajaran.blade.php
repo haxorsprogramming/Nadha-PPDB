@@ -1,9 +1,9 @@
-<div class="col s12 m12 l12">
+<div class="col s12 m12 l12" id="app_tahun_ajaran">
     <div class="card">
         <div class="card-content">
             <span class="card-title">Data Tahun Ajaran</span>
             <p>Silahkan buat tahun ajaran yang berlaku</p><br>
-            <a class="waves-effect waves-light btn"><i class="material-icons left">cloud</i>Tambah Tahun Ajaran</a>
+            <a class="waves-effect waves-light btn" href="javascript:void(0)" @click="add_tahun_ajaran_atc()"><i class="material-icons left">cloud</i>Tambah Tahun Ajaran</a>
             <hr/>
             <table id="example" class="display responsive-table datatable-example">
                 <thead>
@@ -44,23 +44,4 @@
         </div>
     </div>
 </div>
-
-<script>
-    $(document).ready(function() {
-    $('#example').DataTable({
-        language: {
-            searchPlaceholder: 'Search records',
-            sSearch: '',
-            sLengthMenu: 'Show _MENU_',
-            sLength: 'dataTables_length',
-            oPaginate: {
-                sFirst: '<i class="material-icons">chevron_left</i>',
-                sPrevious: '<i class="material-icons">chevron_left</i>',
-                sNext: '<i class="material-icons">chevron_right</i>',
-                sLast: '<i class="material-icons">chevron_right</i>' 
-        }
-        }
-    });
-    $('.dataTables_length select').addClass('browser-default');
-});
-</script>
+<script src="{{ asset('/') }}ladun/nadha_asset/admin_panel/tahun_ajaran/tahun_ajaran.js"></script>

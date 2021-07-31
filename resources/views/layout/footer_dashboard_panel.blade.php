@@ -30,6 +30,7 @@
 <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 <script>
     const server = "{{ url('/') }}/";
+    const file_loader_lottie = "{{ asset('/ladun/nadha_asset/admin_panel/util/lf20_u0w6fbdq.json') }}";
 </script>
 <script src="{{ asset('/') }}ladun/nadha_asset/admin_panel/dashboard.js"></script>
 
