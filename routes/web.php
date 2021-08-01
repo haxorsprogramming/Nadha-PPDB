@@ -17,4 +17,5 @@ Route::group(['middleware' => 'cek_user'], function () {
     Route::get('/panel-admin/dashboard', [C_AdminPanel::class, 'dashboard']);
     Route::get('/panel-admin/beranda', [C_AdminPanel::class, 'beranda']);
     Route::get('/panel-admin/tahun-ajaran', [C_P_Tahun_Ajaran::class, 'data_tahun_ajaran']);
+    Route::post('/panel-admin/tahun-ajaran/proses-tambah', [C_P_Tahun_Ajaran::class, 'proses_tambah']);
 });

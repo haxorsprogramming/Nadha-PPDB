@@ -11,7 +11,7 @@
     <meta name="description" content="Responsive Admin Dashboard Template" />
     <meta name="keywords" content="admin,dashboard" />
     <meta name="author" content="Steelcoders" />
-
+    <meta name="csrf-token" content="{{ csrf_token() }}" />
     <!-- Styles -->
     <link type="text/css" rel="stylesheet" href="{{ asset('/ladun/alpha') }}/plugins/materialize/css/materialize.min.css" />
     <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
