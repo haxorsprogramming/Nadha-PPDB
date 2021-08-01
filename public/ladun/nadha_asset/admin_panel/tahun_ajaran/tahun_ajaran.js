@@ -22,7 +22,7 @@ var app_tahun_ajaran = new Vue({
             if(nama_tahun_ajaran === null || nama_tahun_ajaran === ''){
                 
             }else{
-                let ds = {'nama':nama_tahun_ajaran}
+                let ds = {'nama':nama_tahun_ajaran, 'mulai':tanggal_mulai, 'selesai':tanggal_selesai}
                 axios.post(r_proses_tambah_tahun_ajaran, ds).then(function(res){
                     let dr = res.data;
                     console.log(dr);

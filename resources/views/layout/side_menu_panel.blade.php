@@ -14,7 +14,7 @@
        
         <ul class="sidebar-menu collapsible collapsible-accordion" data-collapsible="accordion">
             <li class="no-padding active"><a class="waves-effect waves-grey active" href="javascript:void(0)" @click="dashboarc_atc()"><i class="material-icons">dashboard</i>Dashboard</a></li>
-            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">dashboard</i>Monitoring PPDB</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">analytics</i>Monitoring PPDB</a></li>
             <li class="no-padding">
                 <a class="collapsible-header waves-effect waves-grey"><i class="material-icons">apps</i>Data Master<i class="nav-drop-icon material-icons">keyboard_arrow_right</i></a>
                 <div class="collapsible-body">
@@ -38,10 +38,10 @@
                     </ul>
                 </div>
             </li>
-            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">dashboard</i>Setting Aplikasi</a></li>
-            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">dashboard</i>Bantuan</a></li>
-            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">dashboard</i>Tentang Aplikasi</a></li>
-            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">dashboard</i>Log Out</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">settings</i>Setting Aplikasi</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">help_outline</i>Bantuan</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">favorite</i>Tentang Aplikasi</a></li>
+            <li class="no-padding"><a class="waves-effect waves-grey" href="javascript:void(0)"><i class="material-icons">logout</i>Log Out</a></li>
         </ul>
         <div class="footer">
             <p class="copyright">Nadha School © </p>

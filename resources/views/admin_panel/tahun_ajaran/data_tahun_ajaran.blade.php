@@ -3,7 +3,7 @@
     <div class="card" id="d_data_tahun_ajaran">
         <div class="card-content">
             <span class="card-title">Data Tahun Ajaran</span>
-            <p>Silahkan buat tahun ajaran yang berlaku</p><br>
+            <p>Tahun ajaran digunakan sebagai penanda rangkaian waktu belajar yang dibagi menjadi beberapa semester. Silahkan buat tahun ajaran yang berlaku</p><br>
             <a class="waves-effect waves-light btn" href="javascript:void(0)" @click="add_tahun_ajaran_atc()"><i class="material-icons left">cloud</i>Tambah Tahun Ajaran</a>
             <hr />
             <table id="example" class="display responsive-table datatable-example">
