@@ -20,7 +20,7 @@ var app_tahun_ajaran = new Vue({
             let tanggal_mulai = document.querySelector("#txt_tanggal_mulai").value;
             let tanggal_selesai = document.querySelector("#txt_tanggal_selesai").value;
             if(nama_tahun_ajaran === null || nama_tahun_ajaran === ''){
-                
+                pesan_toast('Harap isi semua field!!!');
             }else{
                 let ds = {'nama':nama_tahun_ajaran, 'mulai':tanggal_mulai, 'selesai':tanggal_selesai}
                 axios.post(r_proses_tambah_tahun_ajaran, ds).then(function(res){
