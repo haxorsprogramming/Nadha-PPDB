@@ -36,7 +36,7 @@ class C_P_Tahun_Ajaran extends Controller
                     $status_aktif = 'non-aktif';
                 }
                 $tahun_ajaran = new M_Data_Master_Tahun_Ajaran;
-                $tahun_ajaran -> kd_tahun_ajaran = Str::random(20);
+                $tahun_ajaran -> kd_tahun_ajaran = substr(Str::uuid(), 0, 20);
                 $tahun_ajaran -> nama = $nama;
                 $tahun_ajaran -> mulai = $mulai;
                 $tahun_ajaran -> selesai = $selesai;
@@ -60,7 +60,7 @@ class C_P_Tahun_Ajaran extends Controller
     function cek_duplikasi_tahun_ajaran($mulai, $selesai)
     {
         $status_duplikasi = false;
-        $data_tahun_ajaran = M_Data_Master_Tahun_Ajaran::select('mulai','selesai')->get();
+        $data_tahun_ajaran = M_Data_Master_Tahun_Ajaran::select('mulai', 'selesai') -> get();
         foreach($data_tahun_ajaran as $dt){
             $mulai_db = $dt -> mulai;
             $selesai_db = $dt -> selesai;

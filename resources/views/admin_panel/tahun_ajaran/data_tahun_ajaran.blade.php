@@ -9,7 +9,7 @@
             <table id="example" class="display responsive-table datatable-example">
                 <thead>
                     <tr>
-                        <th>Kode</th>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Mulai</th>
                         <th>Selesai</th>
@@ -19,7 +19,7 @@
                 </thead>
                 <tfoot>
                     <tr>
-                        <th>Kode</th>
+                        <th>No</th>
                         <th>Nama</th>
                         <th>Mulai</th>
                         <th>Selesai</th>
@@ -30,7 +30,7 @@
                 <tbody>
                     @foreach($data_tahun_ajaran as $tahun_ajaran)
                     <tr>
-                        <td>{{ $tahun_ajaran -> kd_tahun_ajaran }}</td>
+                        <td>{{ $loop -> iteration }}</td>
                         <td>{{ $tahun_ajaran -> nama }}</td>
                         <td>{{ $tahun_ajaran -> mulai }}</td>
                         <td>{{ $tahun_ajaran -> selesai }}</td>
@@ -70,7 +70,7 @@
                     </div>
                     <div>
                     <a class="waves-effect waves-light btn" href="javascript:void(0)" @click="proses_simpan_atc()"><i class="material-icons left">save</i>Simpan</a>
-                    <a class="waves-effect waves-light btn orange" href="javascript:void(0)"><i class="material-icons left">arrow_back</i>Kembali</a>
+                    <a class="waves-effect waves-light btn orange" href="javascript:void(0)" @click="kembali_atc()"><i class="material-icons left">arrow_back</i>Kembali</a>
                     </div>
                 </form>
             </div>

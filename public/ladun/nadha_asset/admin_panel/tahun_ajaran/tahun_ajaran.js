@@ -28,6 +28,10 @@ var app_tahun_ajaran = new Vue({
                     console.log(dr);
                 });
             }
+        },
+        kembali_atc : function ()
+        {
+            div_menu.tahun_ajaran_atc();
         }
     }
 });
